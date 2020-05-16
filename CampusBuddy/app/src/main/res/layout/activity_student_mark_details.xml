@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentMarkDetailsActivity">
+
+    <LinearLayout
+        android:id="@+id/userLt"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:background="#508FE6"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/tvstNm"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#508FE6"
+            android:background="@drawable/edit"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spSem"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_bg"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="30dp"/>
+
+    <Spinner
+        android:id="@+id/spSub"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_bg"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="250dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="view now"
+        android:id="@+id/btnVn"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="150dp"
+        android:background="@drawable/button"
+        android:onClick="vwNw"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnVn">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*"
+            android:layout_margin="10dp">
+        </TableLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

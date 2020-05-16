@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D52AED78"
+    tools:context=".FacultyAreaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/area_bgf"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:id="@+id/tv_usr"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:textColor="#2979FF"
+            android:background="@drawable/edit"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="#B96A1B9A"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Spinner
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/sp_day"
+                android:background="@drawable/spinner_bg"
+                android:paddingVertical="10dp"
+                android:layout_margin="10dp"/>
+
+            <Spinner
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/sp_sem"
+                android:background="@drawable/spinner_bg"
+                android:paddingVertical="10dp"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#B96A1B9A"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Spinner
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/sp_sub"
+                android:visibility="invisible"
+                android:background="@drawable/spinner_bg"
+                android:paddingVertical="10dp"
+                android:layout_margin="10dp"/>
+
+            <Spinner
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/sp_cor"
+                android:visibility="invisible"
+                android:background="@drawable/spinner_bg"
+                android:paddingVertical="10dp"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#B96A1B9A"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Spinner
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/sp_mod"
+                android:visibility="invisible"
+                android:background="@drawable/spinner_bg"
+                android:paddingVertical="10dp"
+                android:layout_margin="20dp"/>
+
+            <com.commonsware.cwac.richedit.RichEditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ret_top"
+                android:visibility="invisible"
+                android:background="@drawable/edit"
+                android:hint="Topic maximum 3"
+                android:maxLines="5"
+                android:minLines="3"
+                android:padding="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#B96A1B9A"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/sp_dur"
+                android:visibility="invisible"
+                android:background="@drawable/spinner_bg"
+                android:paddingVertical="10dp"
+                android:layout_margin="20dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:background="#B96A1B9A"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="45dp"
+                android:background="@drawable/cnfbtn"
+                android:text="View Before Confirm"
+                android:textAllCaps="false"
+                android:onClick="cnfTbl"
+                android:textFontWeight="1500"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvVw"
+                android:layout_gravity="center"
+                android:text="View Schedule"
+                android:textColor="#44E1BC"
+                android:scrollbarSize="20sp"
+                android:onClick="vwS"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

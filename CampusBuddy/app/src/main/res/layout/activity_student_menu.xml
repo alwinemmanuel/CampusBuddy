@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentMenu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/display_bg"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit"
+            android:text="Student Menu"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-condensed-medium"/>
+
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:background="@drawable/cnfbtn"
+            android:layout_marginTop="250dp"
+            android:layout_gravity="center"
+            android:text="View Time Table"
+            android:onClick="vT"/>
+
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:background="@drawable/cnfbtn"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="view marks"
+            android:onClick="vM"/>
+
+<!--        <Button-->
+<!--            android:layout_width="350dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:background="@drawable/cnfbtn"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="View Marks"-->
+<!--            android:onClick="aI"/>-->
+
+<!--        <Button-->
+<!--            android:layout_width="350dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:background="@drawable/cnfbtn"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="view report"-->
+<!--            android:onClick="vR"/>-->
+
+    </LinearLayout>
+
+</RelativeLayout>
